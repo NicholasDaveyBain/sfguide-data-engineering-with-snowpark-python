@@ -38,7 +38,7 @@ Weather Source in the Snowflake Data Marketplace by following these steps:
                  -> Click the blue "Get" button
                      -> Under "Options", adjust the Database name to read "FROSTBYTE_WEATHERSOURCE" (all capital letters)
                         -> Grant to "HOL_ROLE"
-    
+
 That's it... we don't have to do anything from here to keep this data updated.
 The provider will do that for us and data sharing means we are always seeing
 whatever they they have published.
@@ -57,4 +57,4 @@ GRANT IMPORTED PRIVILEGES ON DATABASE FROSTBYTE_WEATHERSOURCE TO ROLE HOL_ROLE;
 
 
 -- Let's look at the data - same 3-part naming convention as any other table
-SELECT * FROM FROSTBYTE_WEATHERSOURCE.ONPOINT_ID.POSTAL_CODES LIMIT 100;
+SELECT * FROM WEATHER_SOURCE_LLC_FROSTBYTE.ONPOINT_ID.POSTAL_CODES LIMIT 100;
